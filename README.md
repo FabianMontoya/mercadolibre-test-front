@@ -15,15 +15,15 @@ Node.js
 - Abrir la carpeta del proyecto en tu editor de código favorito.
 - Abrir el ejecutor de comandos y ejecutar el comando `npm install` para instalar las dependencias del proyecto.
 - Ejecutar `npm run serve` para ejecutar el proyecto.
-- El proyecto se ejcutará en la ruta `http://localhost:8080/`.
+- El proyecto se ejecutará en la ruta `http://localhost:8080/`.
 
 El proyecto cuenta con las rutas:
 
 | URL | Descripción |
 | ------------- | ------------- |
 |/|Ruta de inicio.|
-|/item?search=query|Ruta de consulta de productos, recibe como parametro get la variable `search` con el item a buscar.|
-|/item/:id|Ruta de consulta de item. recibe la ruta como parametro el ID del producto que desea conocer la información, allí se muestra información más detallada del producto.|
+|/items?search=query|Ruta de consulta de productos, recibe como parametro get la variable `search` con el item a buscar.|
+|/items/:id|Ruta de consulta de item. recibe la ruta como parametro el ID del producto que desea conocer la información, allí se muestra información más detallada del producto.|
 
 La aplicación puedes ser consultada en el siguiente link: https://mercadolibre-test-front-fabian.web.app/
 
