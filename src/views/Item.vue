@@ -12,20 +12,20 @@
                 <v-col sm="4">
                   <v-row>
                     <v-col>
-                      <small>{{info.condition == 'new' ? 'Nuevo' : 'Usado'}} - {{info.sold_quantity}} vendidos</small>
+                      <small style="font-size: 14px">{{info.condition == 'new' ? 'Nuevo' : 'Usado'}} - {{info.sold_quantity}} vendidos</small>
                     </v-col>
                   </v-row>
                   <v-row>
                     <v-col>
-                      <h1>{{info.title}}</h1><small style="margin-top:-10px">{{info.warranty}}</small>
+                      <h1 style="font-size: 24px">{{info.title}}</h1><small style="margin-top:-10px">{{info.warranty}}</small>
                     </v-col>
                   </v-row>
                   <v-row>
                     <v-col>
-                      <h1>$ {{$store.getters.formatPrice(info.price)}} <small style="font-size: 12px">({{info.currency_id}})</small></h1>
+                      <h1 style="font-size: 46px">$ {{$store.getters.formatPrice(info.price)}} <small style="font-size: 12px">({{info.currency_id}})</small></h1>
                     </v-col>
                   </v-row>
-                  <v-row justify="center">
+                  <v-row>
                     <v-col class="mt-5">
                       <v-btn color="primary" @click="buyItem"><span class="ma-10 pd-10">Comprar</span></v-btn>
                     </v-col>
@@ -35,10 +35,10 @@
               <v-row> 
                 <v-col cols="auto">
                   <v-row class="ma-0 mb-3" >
-                    <h2>Descripción del producto</h2>
+                    <h2 style="font-size: 28px">Descripción del producto</h2>
                   </v-row>
-                  <v-row class="ma-0">
-                    <p>{{descripcion}}</p>
+                  <v-row class="ma-0 text-justify">
+                    <p style="font-size: 16px">{{descripcion}}</p>
                   </v-row>
                 </v-col>
               </v-row>
