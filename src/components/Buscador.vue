@@ -15,7 +15,7 @@
         solo
         hide-details
         prepend-inner-icon="mdi-magnify"
-        class="hidden-sm-and-down pa-10"
+        class="pa-5"
         label="Buscar productos"
         v-model="text"
         v-on:keyup.enter="searchItems"
