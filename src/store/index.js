@@ -30,11 +30,10 @@ export default new Vuex.Store({
     },
     getInfoItem: (state) => async (id) => {
       let result = await axios.get(state.apiItems + '/' + id);
-      con
       return result.data;
     },
     getDescriptionItem: (state) => async (id) => {
-      let result = await axios.get(state.apiItems + '/' + id) + '/description';
+      let result = await axios.get(state.apiItems + '/' + id + '/description');
       return result.data.plain_text;
     },
     formatPrice: (state) => (value) => {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-row class="text-center">        
+      <v-row class="text-center">
         <v-col cols="12">
           <p>Indica el producto que deseas buscar.</p>
         </v-col>

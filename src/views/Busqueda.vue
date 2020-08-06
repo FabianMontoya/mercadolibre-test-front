@@ -69,9 +69,13 @@
       <v-row class="fill-height" align-content="center" justify="center" v-else>
         <v-col class="subtitle-1 text-center" cols="12">
           <p>
-            No se encontraron productos que coincidan con la búsqueda <b>"{{ $route.query.search }}"</b>.
+            No se encontraron productos que coincidan con la búsqueda
+            <b>"{{ $route.query.search }}"</b>.
           </p>
-          <p>Intenta verificando la ortografía o usando palabras un poco más comunes.</p>
+          <p>
+            Intenta nuevamente verificando la ortografía o usando palabras un poco más
+            comunes.
+          </p>
         </v-col>
         <v-col cols="12">
           <v-row justify="center">
