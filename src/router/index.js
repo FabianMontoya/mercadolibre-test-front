@@ -14,29 +14,29 @@ const routes = [
         path: "/",
         name: "Home",
         meta: { private: false, title: "Home" },
-        component: () => import(/* webpackChunkName: "demo" */ "../views/Home.vue")
-
+        component: () =>
+          import(/* webpackChunkName: "demo" */ "../views/Home.vue")
       },
       {
         path: "/404",
         name: "Home",
         meta: { private: false, title: "404 Not Found" },
-        component: () => import(/* webpackChunkName: "demo" */ "../views/error/404.vue")
-
+        component: () =>
+          import(/* webpackChunkName: "demo" */ "../views/error/404.vue")
       },
       {
         path: "/items",
         name: "Busqueda Productos",
         meta: { private: false, title: "Busqueda Productos" },
-        component: () => import(/* webpackChunkName: "demo" */ "../views/Busqueda.vue")
-
+        component: () =>
+          import(/* webpackChunkName: "demo" */ "../views/Busqueda.vue")
       },
       {
         path: "/items/:id",
         name: "Detalle Producto",
         meta: { private: false, title: "Detalle Producto" },
-        component: () => import(/* webpackChunkName: "demo" */ "../views/Item.vue")
-
+        component: () =>
+          import(/* webpackChunkName: "demo" */ "../views/Item.vue")
       }
     ]
   }
