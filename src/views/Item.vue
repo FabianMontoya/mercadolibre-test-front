@@ -65,7 +65,6 @@ export default {
     async searchInfo() {
       this.info = await this.$store.getters.getInfoItem(this.$route.params.id);
       this.descripcion = await this.$store.getters.getDescriptionItem(this.$route.params.id);
-      console.log(this.info, this.descripcion);
     },
     buyItem(){
       window.open(this.info.permalink);

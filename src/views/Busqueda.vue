@@ -111,7 +111,6 @@ export default {
         this.$route.query.search,
         4
       );
-      console.log(this.items);
       this.loading = false;
     }
   },
