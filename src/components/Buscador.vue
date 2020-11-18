@@ -41,6 +41,7 @@ export default {
   methods: {
     searchItems() {
       if (this.text != this.oldText) {
+        console.log(this.text)
         this.oldText = this.text;
         this.$router.push({ path: "/items", query: { search: this.text } });
       }
